@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/*CSS RESET*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+button {
+  font: inherit;
+}
+/* VARIABLES  */
+:root {
+  /* COLORS */
+  --INPUT-BG-COLOR: #3d404b;
+  --PRIMARY-BUTTON-BG-COLOR: #1d90f5;
+  --BG-COLOR-START: #272a37;
+  --LIGHT-TEXT-COLOR: #919bab;
+  --TEXT-COLOR: white;
+  --LINK-COLOR: #1d90f5;
+  --SECONDARY-BUTTON-BG: #555b69;
+}
