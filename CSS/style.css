@@ -142,6 +142,19 @@ form {
   display: block;
   color: var(--LIGHT-TEXT-COLOR);
 }
+
+.placeholder {
+  font-size: 9px;
+  display: none;
+  width: fit-content;
+  position: absolute;
+  left: 25px;
+  top: 5px;
+  color: var(--LIGHT-TEXT-COLOR);
+}
+.unhide {
+  display: block;
+}
 @media (max-width: 640px) {
   body {
     font-size: 1.125rem;
@@ -161,5 +174,9 @@ form {
   }
   .form__button {
     padding: 20px;
+  }
+  .placeholder {
+    left: 20px;
+    font-size: 12px;
   }
 }
