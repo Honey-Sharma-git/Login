@@ -37,12 +37,22 @@ input {
 /*UTILITY CLASSES*/
 
 /* GENERAL STYLES */
+
 body {
   font-family: var(--FF);
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
   display: grid;
   background-color: var(--BG-COLOR-START);
-  padding: 0.5rem 2rem;
+  background-image: url("/Images/background-image.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.gradient-wrapper {
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.362);
+  background-image: linear-gradient(to right, black, transparent);
 }
 .header {
   width: 500px;
@@ -195,9 +205,16 @@ form {
 @media (max-width: 640px) {
   body {
     font-size: 1.125rem;
+    background-image: none;
+  }
+  .gradient-wrapper {
+    padding: 2rem 0;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, black, transparent);
   }
   form {
     gap: 20px;
+    width: 100%;
   }
   .form__input {
     padding: 20px;
@@ -215,5 +232,16 @@ form {
   .placeholder {
     left: 20px;
     font-size: 12px;
+  }
+  .main__header {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .header__title {
+    font-size: 2.4rem;
+    color: white;
   }
 }
